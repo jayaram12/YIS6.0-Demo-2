@@ -1,0 +1,455 @@
+.panel {
+  border-radius: 0;
+  margin-bottom: 15px;
+  border: 0;
+}
+
+.panel .panel-heading {
+  border-radius: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 20px 25px;
+}
+
+.panel .panel-heading .panel-title {
+  font-size: 14px;
+  color: #2b2b2b;
+}
+
+.panel .panel-heading a i {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.panel .panel-action {
+  float: right;
+}
+
+.panel .panel-action a {
+  opacity: .5;
+}
+
+.panel .panel-action a:hover {
+  opacity: 1;
+}
+
+.panel .panel-body {
+  padding: 25px;
+}
+
+.panel .panel-body:first-child h3 {
+  margin-top: 0;
+  font-weight: 600;
+  font-family: Poppins,sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.panel .panel-footer {
+  background: #fff;
+  border-radius: 0;
+  padding: 20px 25px;
+}
+
+.panel-green,.panel-success {
+  border-color: #00c292;
+}
+
+.panel-green .panel-heading,.panel-success .panel-heading {
+  border-color: #00c292;
+  color: #fff;
+  background-color: #00c292;
+}
+
+.panel-green .panel-heading a,.panel-success .panel-heading a {
+  color: #fff;
+}
+
+.panel-green .panel-heading a:hover,.panel-success .panel-heading a:hover {
+  color: rgba(255,255,255,.5);
+}
+
+.panel-green a,.panel-success a {
+  color: #00c292;
+}
+
+.panel-green a:hover,.panel-success a:hover {
+  color: #007658;
+}
+
+.panel-black,.panel-inverse {
+  border-color: #4c5667;
+}
+
+.panel-black .panel-heading,.panel-inverse .panel-heading {
+  border-color: #4c5667;
+  color: #fff;
+  background-color: #4c5667;
+}
+
+.panel-black .panel-heading a,.panel-inverse .panel-heading a {
+  color: #fff;
+}
+
+.panel-black .panel-heading a:hover,.panel-inverse .panel-heading a:hover {
+  color: rgba(255,255,255,.5);
+}
+
+.panel-black a,.panel-inverse a {
+  color: #4c5667;
+}
+
+.panel-black a:hover,.panel-inverse a:hover {
+  color: #2c313b;
+}
+
+.panel-darkblue,.panel-primary {
+  border-color: #ab8ce4;
+}
+
+.panel-darkblue .panel-heading,.panel-primary .panel-heading {
+  border-color: #ab8ce4;
+  color: #fff;
+  background-color: #ab8ce4;
+}
+
+.panel-darkblue .panel-heading a,.panel-primary .panel-heading a {
+  color: #fff;
+}
+
+.panel-darkblue .panel-heading a:hover,.panel-primary .panel-heading a:hover {
+  color: rgba(255,255,255,.5);
+}
+
+.panel-darkblue a,.panel-primary a {
+  color: #ab8ce4;
+}
+
+.panel-darkblue a:hover,.panel-primary a:hover {
+  color: #7e4ed5;
+}
+
+.panel-blue,.panel-info {
+  border-color: #03a9f3;
+}
+
+.panel-blue .panel-heading,.panel-info .panel-heading {
+  border-color: #03a9f3;
+  color: #fff;
+  background-color: #03a9f3;
+}
+
+.panel-blue .panel-heading a,.panel-info .panel-heading a {
+  color: #fff;
+}
+
+.panel-blue .panel-heading a:hover,.panel-info .panel-heading a:hover {
+  color: rgba(255,255,255,.5);
+}
+
+.panel-blue a,.panel-info a {
+  color: #03a9f3;
+}
+
+.panel-blue a:hover,.panel-info a:hover {
+  color: #0274a7;
+}
+
+.panel-danger,.panel-red {
+  border-color: #fb9678;
+}
+
+.panel-danger .panel-heading,.panel-red .panel-heading {
+  border-color: #fb9678;
+  color: #fff;
+  background-color: #fb9678;
+}
+
+.panel-danger .panel-heading a,.panel-red .panel-heading a {
+  color: #fff;
+}
+
+.panel-danger .panel-heading a:hover,.panel-red .panel-heading a:hover {
+  color: rgba(255,255,255,.5);
+}
+
+.panel-danger a,.panel-red a {
+  color: #fb9678;
+}
+
+.panel-danger a:hover,.panel-red a:hover {
+  color: #f95c2e;
+}
+
+.panel-warning,.panel-yellow {
+  border-color: #fec107;
+}
+
+.panel-warning .panel-heading,.panel-yellow .panel-heading {
+  border-color: #fec107;
+  color: #fff;
+  background-color: #fec107;
+}
+
+.panel-warning .panel-heading a,.panel-yellow .panel-heading a {
+  color: #fff;
+}
+
+.panel-warning .panel-heading a:hover,.panel-yellow .panel-heading a:hover {
+  color: rgba(255,255,255,.5);
+}
+
+.panel-warning a,.panel-yellow a {
+  color: #fec107;
+}
+
+.panel-warning a:hover,.panel-yellow a:hover {
+  color: #b88b01;
+}
+
+.panel-default,.panel-white {
+  border-color: rgba(120,130,140,.13);
+}
+
+.panel-default .panel-heading,.panel-white .panel-heading {
+  color: #2b2b2b;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(120,130,140,.13);
+}
+
+.panel-default .panel-body,.panel-white .panel-body {
+  color: #2b2b2b;
+}
+
+.panel-default .panel-action a,.panel-white .panel-action a {
+  color: #2b2b2b;
+  opacity: .5;
+}
+
+.panel-default .panel-action a:hover,.panel-white .panel-action a:hover {
+  opacity: 1;
+  color: #2b2b2b;
+}
+
+.panel-default .panel-footer,.panel-white .panel-footer {
+  background: #fff;
+  color: #2b2b2b;
+  border-top: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-info {
+  border-color: #03a9f3;
+}
+
+.full-panel-info .panel-heading {
+  border-color: #03a9f3;
+  color: #fff;
+  background-color: #03a9f3;
+  border-bottom: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-info .panel-body {
+  background: #03a9f3;
+  color: #fff;
+}
+
+.full-panel-info .panel-footer {
+  background: #03a9f3;
+  color: #fff;
+  border-top: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-info a {
+  color: #03a9f3;
+}
+
+.full-panel-info a:hover {
+  color: #0274a7;
+}
+
+.full-panel-warning {
+  border-color: #fec107;
+}
+
+.full-panel-warning .panel-heading {
+  border-color: #fec107;
+  color: #fff;
+  background-color: #fec107;
+  border-bottom: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-warning .panel-body {
+  background: #fec107;
+  color: #fff;
+}
+
+.full-panel-warning .panel-footer {
+  background: #fec107;
+  color: #fff;
+  border-top: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-warning a {
+  color: #fec107;
+}
+
+.full-panel-warning a:hover {
+  color: #b88b01;
+}
+
+.full-panel-success {
+  border-color: #00c292;
+}
+
+.full-panel-success .panel-heading {
+  border-color: #00c292;
+  color: #fff;
+  background-color: #00c292;
+  border-bottom: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-success .panel-body {
+  background: #00c292;
+  color: #fff;
+}
+
+.full-panel-success .panel-footer {
+  background: #00c292;
+  color: #fff;
+  border-top: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-success a {
+  color: #00c292;
+}
+
+.full-panel-success a:hover {
+  color: #007658;
+}
+
+.full-panel-purple {
+  border-color: #9675ce;
+}
+
+.full-panel-purple .panel-heading {
+  color: #fff;
+  background-color: #9675ce;
+  border-bottom: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-purple .panel-body {
+  background: #9675ce;
+  color: #fff;
+}
+
+.full-panel-purple .panel-footer {
+  background: #9675ce;
+  color: #fff;
+  border-top: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-purple a {
+  color: #9675ce;
+}
+
+.full-panel-purple a:hover {
+  color: #6c41b6;
+}
+
+.full-panel-danger {
+  border-color: #fb9678;
+}
+
+.full-panel-danger .panel-heading {
+  border-color: #fb9678;
+  color: #fff;
+  background-color: #fb9678;
+  border-bottom: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-danger .panel-body {
+  background: #fb9678;
+  color: #fff;
+}
+
+.full-panel-danger .panel-footer {
+  background: #fb9678;
+  color: #fff;
+  border-top: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-danger a {
+  color: #fb9678;
+}
+
+.full-panel-danger a:hover {
+  color: #f95c2e;
+}
+
+.full-panel-inverse {
+  border-color: #4c5667;
+}
+
+.full-panel-inverse .panel-heading {
+  border-color: #4c5667;
+  color: #fff;
+  background-color: #4c5667;
+  border-bottom: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-inverse .panel-body {
+  background: #4c5667;
+  color: #fff;
+}
+
+.full-panel-inverse .panel-footer {
+  background: #4c5667;
+  color: #fff;
+  border-top: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-inverse a {
+  color: #4c5667;
+}
+
+.full-panel-inverse a:hover {
+  color: #2c313b;
+}
+
+.full-panel-default {
+  border-color: rgba(120,130,140,.13);
+}
+
+.full-panel-default .panel-heading {
+  color: #2b2b2b;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-default .panel-body {
+  color: #2b2b2b;
+}
+
+.full-panel-default .panel-footer {
+  background: #fff;
+  color: #2b2b2b;
+  border-top: 1px solid rgba(120,130,140,.13);
+}
+
+.full-panel-default a {
+  color: #2b2b2b;
+}
+
+.full-panel-default a:hover {
+  color: #2c313b;
+}
+
+.panel-opcl {
+  float: right;
+}
+
+.panel-opcl i {
+  margin-left: 8px;
+  font-size: 10px;
+  cursor: pointer;
+}
