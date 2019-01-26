@@ -1,19 +1,137 @@
+/* Warehouse Dashboard Css */
+/* Common Css */
+.form-group {
+  margin-bottom: 10px !important;
+}
+hr{margin-top:10px;}
+.panel-inverse .panel-heading {
+  padding: 10px 15px;
+}
+.panel-inverse {
+  border: 1px solid rgba(76, 86, 103, 0.1);
+}
+/* Card view 3 */
+.head-card{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: #333;
+    background: #f7f7f9;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    font-size: .875rem;
+}
+.card-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 17px 0;
+    color: #fff;
+    margin-top: -32px;
+    float: left;
+    background-color: #9399ab;
+}
+.card-icon img{margin:0px auto;}
+.card-text-right{padding:5px 0px;}
+.card-text-right .card-title{
+    margin-top: 4px;
+    font-size: 23px;
+    font-weight: 500;
+}
+.card-footer-details{padding:5px;}
+.card-footer-details p {
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding:0px 10px;
+}
+/* Card View 3 end */
+/* checkin css */
+.width-250{width:250px;}
+.width-150{width:150px;}
+.width-300{width:300px}
+.table>thead>tr>th{color:#fff;}
+.table-padding tbody .view td{padding:5px 20px !important;}
+.table-padding tbody .fold .fold-padding{padding:0px !important;}
+.checkin-panel-right ul{list-style: none;}
+table.fold-table > tbody > tr.view td, table.fold-table > tbody > tr.view th {
+  cursor: pointer;
+}
+table.fold-table > tbody > tr.view td:first-child,
+table.fold-table > tbody > tr.view th:first-child {
+  position: relative;
+  padding-left: 20px;
+}
+table.fold-table > tbody > tr.view td:first-child:before,
+table.fold-table > tbody > tr.view th:first-child:before {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 9px;
+  height: 16px;
+  margin-top: -8px;
+  font: 16px fontawesome;
+  color: #999;
+  content: "\f0d7";
+  transition: all .3s ease;
+}
+table.fold-table > tbody > tr.view:nth-child(4n-1) {
+  background: #eee;
+}
+table.fold-table > tbody > tr.view:hover {
+  background: #f1f1f1;
+}
+table.fold-table > tbody > tr.view.open {
+  color: #000;
+}
+table.fold-table > tbody > tr.view.open td:first-child:before, table.fold-table > tbody > tr.view.open th:first-child:before {
+  transform: rotate(-180deg);
+  color: #333;
+}
+table.fold-table > tbody > tr.fold {
+  display: none;
+}
+table.fold-table > tbody > tr.fold.open {
+  display: table-row;
+}
+
+
+.fold-content h3 {
+  margin-top: 0;
+}
+.fold-content > table {
+  border: 1px solid #ccc;
+}
+.fold-content > table > tbody tr:nth-child(even) {
+  background: #eee;
+}
+
+/* end of checkin css */
+/* end of Warehouse Dashboard CSS */
 .top-left-part {width:260px; padding:10px; }
 .navbar-top-links>li>a {min-height:100%; line-height:58px;}
-.app-search .form-control, .app-search .form-control:focus {margin-left:70px; margin-top:11px; width:350px;}
+.app-search .form-control, .app-search .form-control:focus {margin-left:70px; margin-top:13px; width:350px;}
 .app-search a {top:17px;}
-.menu-hr {margin-top:0px;}
-.page-title::after{  content: '';  border-bottom: 3px solid #2b2b2b; padding-bottom:2px;  width: 30px;  display: block;}
+.menu-hr {margin-top:0px; background-color:#4f5467; margin-bottom:5px;}
+.page-title::after{  content: '';  border-bottom: 3px solid #2b2b2b; padding-bottom:6px;  width: 50px;  display: block;}
+.cust-nav-tab {overflow:hidden; float:left;}
 .cust-nav-tab ul{list-style: none; padding-left: 0px;margin-bottom:0px; width:100%; border-bottom:1px solid #c9c9c9; float:left;}
 .cust-nav-tab ul li{display: block; float:left;padding: 10PX 85px;}
-.cust-active{background-color: #9399ab;color:#fff;font-weight: 600;}
 .cust-nav-tab-2 ul{list-style: none; padding-left: 0px;margin-bottom:0px; width:100%; border-bottom:1px solid #c9c9c9; float:left;}
 .cust-nav-tab-2 ul li{display: block; float:left;padding: 10px 40px;}
 .cust-active{background-color: #9399ab;color:#fff;font-weight: 600;}
 .MarginTop30 {margin-top:30px;}
 .MarginTop25 {margin-top:25px;}
-.notify .heartbit {top:-1px;}
-.notify .point {top:9px;}
+.main-color {color:#4F5467;}
+.profile-menu {padding-left:25px;}
 
 .page--sub-title::after {
     content: '';
@@ -71,7 +189,7 @@
 .PriceFiltering table{width:80%;}
 .PriceFiltering table tr td {border-top:none !important}
 table thead th {background-color:#9399ab !important;}
-.btn-custom {background-color:#9399ab !important;}
+.btn-custom {background-color:#9399ab !important; border:none !important;}
 .order-table table thead tr th{color:#fff;}
 .order-table table tbody tr td:first-child{width:30px;}
 .order-table table tbody tr td:nth-child(2){width:40px;text-align: center;}
@@ -81,20 +199,129 @@ table thead th {background-color:#9399ab !important;}
 .table-hover>tbody>tr:hover, .table-striped>tbody>tr:nth-of-type(odd), .table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
     background-color: #fff;
 }
-/* Dashboard css */
-.cards{text-align: center;margin-top:20px;} 
-.card-color-1{background-color: #ea676d;width:20%;float: left;}
-.card-color-2{background-color: #7d8ee1;width:20%;float: left;}
-.card-color-3{background-color: #4bc076;width:20%;float: left;}
-.card-color-4{background-color: #fdb858;width:20%;float: left;}
-.card-color-5{background-color: #62cae4;width:20%;float: left;}
-.cards h4{color:#fff;font-weight: 600;}
-.cards p{color:#fff;font-size: 13px;}
-.cust-list-items {
-    background-color: #f5f5f5;
-    margin-top: 3px;
-    padding: 10px;
+.num-circle-white{padding:5px 6PX;border-radius: 50px;background-color: #fff;color: #4bc076;margin-left: 6px;font-size: 12px;}
+.num-circle-red{padding:5px 6PX;border-radius: 50px;background-color: #ea676d;color: #fff;margin-left: 6px;font-size: 12px;}
+/* end of Dashboard css */
+.m-t-25{margin-top:25px;}
+.table tr th, .table tr td {
+    padding: 8px !important;
+    vertical-align: middle;
 }
+#Dashboard .app-search .form-control {
+    margin-top: 0px;
+    border: 1px solid #e4e7ea;
+    width: 200px;
+}
+#Dashboard .app-search {
+    margin-right: 10px; margin-bottom:10px;
+}
+#Dashboard .app-search a {
+    top:5px;
+}
+#Dashboard .app-search .form-control:focus {
+    width: 230px;
+}
+
+.breadcrumb .breadcrumb-item+.breadcrumb-item:before {
+    content: "\e649";
+    font-family: themify;
+    color: #ced4da;
+    font-size: 11px;
+}
+.breadcrumb-item+.breadcrumb-item:before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: "/";
+}
+.bg-title .breadcrumb .active {color:#4F5467 !important;}
+
+/* Dashboard CSS */
+.HorizontalMenu {background-color:#6f7482;}
+#side-menu li a  {color:#fff !important;}
+#side-menu li a:hover, #side-menu li a:focus {background-color:#4F5467 !important; color:#fff !important;}
+/* #page-wrapper {margin:0px;} */
+.custom-grid {width:19%; margin:20px 8px; float:left; padding:5px; overflow:hidden;}
+.info-box {
+    display: block;
+    min-height: 70px;
+    background: #fff;
+    width: 100%;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+.bg-blue-gradient {
+    background: #0073b7 !important;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #0073b7), color-stop(1, #0089db)) !important;
+    background: -ms-linear-gradient(bottom, #0073b7, #0089db) !important;
+    background: -moz-linear-gradient(center bottom, #0073b7 0%, #0089db 100%) !important;
+    background: -o-linear-gradient(#0089db, #0073b7) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0089db', endColorstr='#0073b7', GradientType=0) !important;
+}
+.bg-yellow-gradient {
+    background: #f39c12 !important;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f39c12), color-stop(1, #f7bc60)) !important;
+    background: -ms-linear-gradient(bottom, #f39c12, #f7bc60) !important;
+    background: -moz-linear-gradient(center bottom, #f39c12 0%, #f7bc60 100%) !important;
+    background: -o-linear-gradient(#f7bc60, #f39c12) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7bc60', endColorstr='#f39c12', GradientType=0) !important;
+  }
+  .bg-light-blue-gradient {
+    background: #3c8dbc !important;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3c8dbc), color-stop(1, #67a8ce)) !important;
+    background: -ms-linear-gradient(bottom, #3c8dbc, #67a8ce) !important;
+    background: -moz-linear-gradient(center bottom, #3c8dbc 0%, #67a8ce 100%) !important;
+    background: -o-linear-gradient(#67a8ce, #3c8dbc) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#67a8ce', endColorstr='#3c8dbc', GradientType=0) !important;
+}
+.bg-green-gradient {
+    background: #00a65a !important;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #00a65a), color-stop(1, #00ca6d)) !important;
+    background: -ms-linear-gradient(bottom, #00a65a, #00ca6d) !important;
+    background: -moz-linear-gradient(center bottom, #00a65a 0%, #00ca6d 100%) !important;
+    background: -o-linear-gradient(#00ca6d, #00a65a) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ca6d', endColorstr='#00a65a', GradientType=0) !important;
+    color: #fff;
+}
+.bg-red-gradient {
+    background: #dd4b39 !important;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dd4b39), color-stop(1, #e47365)) !important;
+    background: -ms-linear-gradient(bottom, #dd4b39, #e47365) !important;
+    background: -moz-linear-gradient(center bottom, #dd4b39 0%, #e47365 100%) !important;
+    background: -o-linear-gradient(#e47365, #dd4b39) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e47365', endColorstr='#dd4b39', GradientType=0) !important;
+}
+.info-box-icon {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2px;
+    display: block;
+    float: left;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 70px; color:#fff;
+    background: rgba(0, 0, 0, 0.2);
+}
+.info-box-content {
+    padding: 5px 10px;
+    margin-left: 70px; overflow:hidden;
+}
+.info-box-content-primary, .info-box-content-secondary {padding-top:6px;}
+.info-box-content-primary p {font-size:11px; margin-bottom:5px;}
+.info-box-content-primary h4 {margin-top:0px; font-size:20px; color:#4f5467;}
+.info-box-content-secondary p {font-size:11px; margin-bottom:5px;}
+.info-box-content-secondary h4 {margin-top:0px; font-size:20px; color:#4f5467;}
+.bg-title {
+    padding: 10px 15px 10px;
+    margin-bottom: 15px;
+}
+.bordered {border:1px solid #c9c9c9; border-radius:4px; border-top-left-radius:0px; margin-top:-1px; padding:10px;}
 .submenu-list-item {
     list-style: none;
     padding-left: 0px;
@@ -103,37 +330,396 @@ table thead th {background-color:#9399ab !important;}
 .submenu-list-item li {
     display: inline;
     padding: 0 8px;
-    border-right: 1px solid #9c9a9a;
+    border-right: 1px solid #c9c9c9;
 }
-.num-circle-white{padding:5px 6PX;border-radius: 50px;background-color: #fff;color: #4bc076;margin-left: 6px;font-size: 12px;}
-.num-circle-red{padding:5px 6PX;border-radius: 50px;background-color: #ea676d;color: #fff;margin-left: 6px;font-size: 12px;}
-/* end of Dashboard css */
-.m-t-25{margin-top:25px;}
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  }
-  
-  /* Tooltip text */
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
+.submenu-list-item li i {font-size:16px; color:#4f5467;}
+.cust-list-items {
+    background-color: #f5f5f5;
+    margin-top: 3px;
+    padding: 10px;
+}
+.tooltip .tooltip-inner {font-size:12px; font-weight:normal; background-color:#4f5467;}
+.tooltip .tooltip-inner:before {border-top-color:#4f5467 !important;}
+.page-title i {background-color: #4f5467;
+    padding: 5px 9px;
     color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-   
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
+    margin-left: 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: normal;}
+.page-title i:hover {cursor:pointer;}
+/*  Modal Popup  */
+html.remodal-is-locked {
+  overflow: hidden;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+/* Anti FOUC */
+
+.remodal,
+[data-remodal-id] {
+  display: none;
+}
+
+/* Necessary styles of the overlay */
+
+.remodal-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px;
+  display: none;
+}
+
+/* Necessary styles of the wrapper */
+
+.remodal-wrapper {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  overflow: auto;
+  text-align: center;
+  -webkit-overflow-scrolling: touch;
+}
+
+.remodal-wrapper:after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -0.05em;
+  content: "";
+}
+
+/* Fix iPad, iPhone glitches */
+
+.remodal-overlay,
+.remodal-wrapper {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Necessary styles of the modal dialog */
+
+.remodal {
+  position: relative;
+  outline: none;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.remodal-is-initialized {
+  /* Disable Anti-FOUC */
+  display: inline-block;
+}
+.remodal-bg.remodal-is-opening,
+.remodal-bg.remodal-is-opened {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+/* Default theme styles of the overlay */
+
+.remodal-overlay {
+  background: rgba(43, 46, 56, 0.9);
+}
+
+.remodal-overlay.remodal-is-opening,
+.remodal-overlay.remodal-is-closing {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.remodal-overlay.remodal-is-opening {
+  -webkit-animation-name: remodal-overlay-opening-keyframes;
+  animation-name: remodal-overlay-opening-keyframes;
+}
+
+.remodal-overlay.remodal-is-closing {
+  -webkit-animation-name: remodal-overlay-closing-keyframes;
+  animation-name: remodal-overlay-closing-keyframes;
+}
+
+/* Default theme styles of the wrapper */
+
+.remodal-wrapper {
+  padding: 10px 10px 0;
+}
+
+/* Default theme styles of the modal dialog */
+
+.remodal {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 35px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  color: #2b2e38;
+  background: #fff;
+}
+
+.remodal.remodal-is-opening,
+.remodal.remodal-is-closing {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.remodal.remodal-is-opening {
+  -webkit-animation-name: remodal-opening-keyframes;
+  animation-name: remodal-opening-keyframes;
+}
+
+.remodal.remodal-is-closing {
+  -webkit-animation-name: remodal-closing-keyframes;
+  animation-name: remodal-closing-keyframes;
+}
+
+/* Vertical align of the modal dialog */
+
+.remodal,
+.remodal-wrapper:after {
+  vertical-align: middle;
+}
+
+/* Close button */
+
+.remodal-close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  overflow: visible;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  text-decoration: none;
+  color: #95979c;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+.remodal-close:hover,
+.remodal-close:focus {
+  color: #2b2e38;
+}
+
+.remodal-close:before {
+  font-size: 25px;
+  line-height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 35px;
+  content: "\00d7";
+}
+
+/* Dialog buttons */
+
+.remodal-confirm,
+.remodal-cancel {
+  font: inherit;
+  display: inline-block;
+  overflow: visible;
+  min-width: 110px;
+  margin: 0;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+
+  border: 0;
+  outline: 0;
+}
+
+.remodal-confirm {
+  color: #fff;
+  background: #81c784;
+}
+
+.remodal-confirm:hover,
+.remodal-confirm:focus {
+  background: #66bb6a;
+}
+
+.remodal-cancel {
+  color: #fff;
+  background: #e57373;
+}
+
+.remodal-cancel:hover,
+.remodal-cancel:focus {
+  background: #ef5350;
+}
+
+/* Remove inner padding and border in Firefox 4+ for the button tag. */
+
+.remodal-confirm::-moz-focus-inner,
+.remodal-cancel::-moz-focus-inner,
+.remodal-close::-moz-focus-inner {
+  padding: 0;
+
+  border: 0;
+}
+
+/* Keyframes
+   ========================================================================== */
+
+@-webkit-keyframes remodal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+
+    opacity: 0;
   }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
+  to {
+    -webkit-transform: none;
+    transform: none;
+
+    opacity: 1;
+
+    -webkit-filter: blur(0);
+    filter: blur(0);
   }
+}
+
+@keyframes remodal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+
+    opacity: 1;
+
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@-webkit-keyframes remodal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+
+    opacity: 0;
+
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes remodal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+
+    opacity: 0;
+
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@-webkit-keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Media queries
+   ========================================================================== */
+
+@media only screen and (min-width: 641px) {
+  .remodal {
+    max-width: 500px;
+  }
+}
+
+/* IE8
+   ========================================================================== */
+
+.lt-ie9 .remodal-overlay {
+  background: #2b2e38;
+}
+
+.lt-ie9 .remodal {
+  width: 700px;
+}
+
+
+
+
+
+
+
+
+
 /* Media Screens */
 @media (min-width: 1024px) {
 
@@ -148,10 +734,35 @@ table thead th {background-color:#9399ab !important;}
     z-index: 10;
     position: absolute;
     width: 250px;
-    padding-top: 65px;
+    padding-top: 55px;
     height: 100%;
+}
+#page-wrapper {
+    margin: 0 0 0 250px;
 }
 .content-wrapper .top-left-part {width:260px;}
 .PaddingRight35 {padding-right:35px;}
 
+.footer {
+    left: 0px;
 }
+
+}
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark:after{
+  content: '';
+    display: block;
+    width: .5em;
+    height: 1em;
+    border-style: solid;
+    border-width: 0 .26em .26em 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark:before{
+  display: none;
+}
+
+
+
