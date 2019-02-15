@@ -26,12 +26,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link href="css/custom-select.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap-select.min.css" rel="stylesheet" />
     <link href="css/multi-select.css" rel="stylesheet" type="text/css" />
-    
+
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/colors/main.css" id="theme" rel="stylesheet">
     <!-- <link href="css/custom.css" rel="stylesheet"> -->
-    <link href="css/colors/default.css" id="theme" rel="stylesheet">
     <link href="css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -172,209 +171,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </ul>
                         <!-- /.dropdown-user -->
                     </li>
+                    <li class="dropdown"> <a class="waves-effect waves-light dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)"><i class="ti-settings"></i></a>
+                      <ul class="dropdown-menu dropdown-user animated flipInY colorSettings">
+                        <li><a href="javascript:void(0)" theme="main" class="default-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="website" class="website-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="blue" class="blue-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="green" class="green-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="brown" class="brown-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="magenta" class="magenta-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="darkblue" class="darkblue-color-theme"></a></li>
+                      </ul>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-header -->
             <!-- /.navbar-top-links -->
             <!-- /.navbar-static-side -->
         </nav>
-        <!--nav class="HorizontalMenu">
-          <ul id="menu">
-            <li><a href="#">Dashboard</a></li>
-            <li>
-                <a href="#">Admin</a>
-                <ul>
-                    <li><a href="#">Users</a></li>
-                    <li><a href="#">Department</a></li>
-                    <li><a href="#">Roles</a></li>
-                    <li><a href="#">Resource List</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Warehouse</a>
-                <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Checkin</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">CSR</a>
-                <ul>
-                    <li><a href="#">Zulily</a></li>
-                </ul>
-            </li>
-            <li>
-              <a href="#">Customers</a>
-              <ul>
-                  <li><a href="#">Portal</a></li>
-                  <li><a href="#">Add New Customer</a></li>
-                  <li><a href="#">Information</a></li>
-                  <li><a href="#">Addresses & Contacts</a></li>
-                  <li><a href="#">Notes</a></li>
-                  <li><a href="#">History</a></li>
-                  <li>
-                      <a href="#">Claims</a>
-                      <ul>
-                          <li><a href="#">View,Add & Finalize Items</a></li>
-                          <li><a href="#">CheckIn Returns</a></li>
-                      </ul>
-                  </li>
-                  <li>
-                      <a href="#">Payments</a>
-                      <ul>
-                          <li><a href="#">Add & View Payments</a></li>
-                          <li><a href="#">Auto Add Payments</a></li>
-                          <li><a href="#">Add & View Credit Cards</a></li>
-                      </ul>
-                  </li>
-                  <li>
-                      <a href="#">Orders & Invoices</a>
-                      <ul>
-                          <li><a href="#">All Items for this Customer</a></li>
-                          <li><a href="#">All Customers for this Item</a></li>
-                          <li><a href="#">Historic Pricing of the Item</a></li>
-                          <li><a href="#">Reset Password</a></li>
-                      </ul>
-                  </li>
-                  <li><a href="#">Quotes</a></li>
-              </ul>
-            </li>
-            <li>
-                <a href="#">Orders</a>
-                <ul>
-                    <li><a href="#">Add New Order</a></li>
-                    <li><a href="#">Add/Edit Items</a></li>
-                    <li><a href="#">Add Bulk Items</a></li>
-                    <li><a href="#">Billing/Shipping</a></li>
-                    <li><a href="#">Credit Card Transaction</a></li>
-                    <li><a href="#">Auto Process Order</a></li>
-                    <li><a href="#">RIP Order</a></li>
-                    <li><a href="#">Queue Order</a></li>
-                    <li><a href="#">Divide Order</a></li>
-                    <li><a href="#">Order Life Cycle</a></li>
-                    <li><a href="#">Order Commitment</a></li>
-                    <li><a href="#">Check Duplicates</a></li>
-                    <li><a href="#">Problems & Overrides</a></li>
-                    <li><a href="#">Copy & Move Orders</a></li>
-                    <li><a href="#">Get Order Images</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Show Management</a>
-                <ul>
-                    <li><a href="#">Showroom CheckIn</a></li>
-                    <li><a href="#">Temporary Users</a></li>
-                    <li><a href="#">Show Labels</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Inventory</a>
-            </li>
-            <li>
-                <a href="#">Showrooms</a>
-            </li>
-            <li>
-                <a href="#">Marketing</a>
-                <ul>
-                    <li><a href="#">Notifications</a></li>
-                </ul>
-            </li>
-          </ul>
-        </nav-->
-        <!-- End Top Navigation -->
-        <!-- Left navbar-header -->
-        <!-- <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav navbar-collapse slimscrollsidebar">
-                <ul class="nav" id="side-menu">
-                    <li class="user-pro">
-                        <a href="#" class="waves-effect"><img src="images/profile.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> Steve Gection<span class="fa arrow"></span></span>
-                        </a>
-                        <hr class="menu-hr"/>
-                        <ul class="nav nav-second-level">
-                            <li><a href="javascript:void(0)"><i class="ti-user"></i> My Profile</a></li>
-                            <li><a href="javascript:void(0)"><i class="ti-wallet"></i> My Orders</a></li>
-                            <li><a href="javascript:void(0)"><i class="ti-email"></i> My Claims</a></li>
-                            <li><a href="javascript:void(0)"><i class="ti-settings"></i> Account Setting</a></li>
-                            <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> Logout</a></li>
-                        </ul>
-                    </li>
-
-                    <li> <a href="index.html" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i> <span class="hide-menu"> Dashboard <span class="fa arrow"></span></span></a></li>
-                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="7"></i> <span class="hide-menu"> Admin <span class="fa arrow"></span></span></a>
-                        <ul class="nav nav-second-level">
-                            <li> <a href="#">Users</a> </li>
-                            <li> <a href="#">Department</a> </li>
-                            <li> <a href="#">Roles</a> </li>
-                            <li> <a href="#">Resource List</a> </li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="waves-effect"><i data-icon=")" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu"> Customers <span class="fa arrow"></span></span></a>
-                        <ul class="nav nav-second-level">
-                          <li> <a href="#">Portal</a> </li>
-                          <li> <a href="#">Add New Customer</a> </li>
-                          <li> <a href="#">Information</a> </li>
-                          <li> <a href="#">Addresses & Contacts</a> </li>
-                          <li> <a href="#">Notes</a> </li>
-                          <li> <a href="#">History</a> </li>
-                          <li><a href="javascript:void(0)" class="waves-effect">Claims<span class="fa arrow"></span></a>
-                              <ul class="nav nav-third-level">
-                                  <li> <a href="#">View, Add & Finalize Items</a></li>
-                                  <li> <a href="#">Check In Returns</a></li>
-                              </ul>
-                          </li>
-                          <li><a href="javascript:void(0)" class="waves-effect">Payments<span class="fa arrow"></span></a>
-                              <ul class="nav nav-third-level">
-                                  <li> <a href="#">Add & View Payments</a></li>
-                                  <li> <a href="#">Auto Add Payments</a></li>
-                                  <li> <a href="#">Add & View Credit Cards</a></li>
-                              </ul>
-                          </li>
-                          <li><a href="javascript:void(0)" class="waves-effect">Orders & Invoices<span class="fa arrow"></span></a>
-                              <ul class="nav nav-third-level">
-                                  <li> <a href="#">All Items for this Customer</a></li>
-                                  <li> <a href="#">All Customers for this Item</a></li>
-                                  <li> <a href="#">Historic Pricing of the Item</a></li>
-                                  <li> <a href="#">Reset Pwd</a></li>
-                              </ul>
-                          </li>
-                          <li> <a href="#">Quotes</a> </li>
-                        </ul>
-                    </li>
-                    <li> <a href="#" class="waves-effect"><i data-icon="/" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu"> Orders <span class="fa arrow"></span></span></a>
-                        <ul class="nav nav-second-level">
-                          <li> <a href="#">Add New Order</a> </li>
-                          <li> <a href="#">Add/Edit Items</a> </li>
-                          <li> <a href="#">Add Bulk Items</a> </li>
-                          <li> <a href="#">Billing/Shipping</a> </li>
-                          <li> <a href="#">Credit Card Transaction</a> </li>
-                          <li> <a href="#">Auto Process Order</a> </li>
-                          <li> <a href="#">Rip Order</a> </li>
-                          <li> <a href="#">Queue Order</a> </li>
-                          <li> <a href="#">Divide Order</a> </li>
-                          <li> <a href="#">Order Life Cycle</a> </li>
-                          <li> <a href="#">Order Commitment</a> </li>
-                          <li> <a href="#">Check Duplicates</a> </li>
-                          <li> <a href="#">Problems & Overrides</a> </li>
-                          <li> <a href="#">Copy & Move Orders</a> </li>
-                          <li> <a href="#">Get Order Images</a> </li>
-                        </ul>
-                    </li>
-                    <li> <a href="#" class="waves-effect"><i data-icon="&#xe00b;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu"> Show Management <span class="fa arrow"></span></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="#">Showroom Checkin</a></li>
-                            <li><a href="#">Temporary Users</a></li>
-                            <li><a href="#">Show Labels</a></li>
-                        </ul>
-                    </li>
-                    <li> <a href="#" class="waves-effect"><i data-icon="&#xe00b;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu"> Marketing <span class="fa arrow"></span></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="#">Notifications</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div> -->
         <!-- Left navbar-header end -->
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse slimscrollsidebar HorizontalMenu">
@@ -392,90 +205,95 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </ul>
                     </li>
 
-                    <li> <a href="index.html" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i> <span class="hide-menu"> Dashboard <span class="fa arrow"></span></span></a></li>
-                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="7"></i> <span class="hide-menu"> Admin <span class="fa arrow"></span></span></a>
+                    <li> <a href="index.html" class="waves-effect"><i class="fa fa-dashboard fa-fw"></i> <span class="hide-menu"> Dashboard <span class="fa arrow"></span></span></a></li>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-user fa-fw"></i> <span class="hide-menu"> Admin <span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
-                            <li> <a href="#">Users</a> </li>
-                            <li> <a href="#">Department</a> </li>
-                            <li> <a href="#">Roles</a> </li>
-                            <li> <a href="#">Resource List</a> </li>
-                            <li> <a href="#">Collection Items</a> </li>
-                            <li> <a href="#">Personalization</a> </li>
+                            <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw fa-fw"></i>&nbsp;Users</a> </li>
+                            <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Department</a> </li>
+                            <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Roles</a> </li>
+                            <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Resource List</a> </li>
+                            <li> <a href="collectionitems.html"><i class="fa fa-object-group fa-fw"></i>&nbsp;Collection Items</a> </li>
+                            <li> <a href="personalization.html"><i class="fa fa-picture-o fa-fw"></i>&nbsp;Personalization</a> </li>
                         </ul>
                     </li>
-                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="z"></i> <span class="hide-menu"> Warehouse <span class="fa arrow"></span></span></a>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-home fa-fw"></i> <span class="hide-menu"> Warehouse <span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
-                            <li> <a href="#">Dashboard</a> </li>
-                            <li> <a href="#">Calendar</a> </li>
-                            <li> <a href="#">Checkin</a> </li>
+                            <li> <a href="warehouse-dashboard.html"><i class="fa fa-tachometer fa-fw"></i>&nbsp;Dashboard</a> </li>
+                            <li> <a href="calendar.html"><i class="fa fa-calendar fa-fw"></i>&nbsp;Calendar</a> </li>
+                            <li> <a href="warehouse-checkin.html"><i class="fa fa-check-circle-o fa-fw"></i>&nbsp;Checkin</a> </li>
                         </ul>
                     </li>
-                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-user-o fa-fw" aria-hidden="true"></i> <span class="hide-menu"> CSR <span class="fa arrow"></span></span></a>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-users fa-fw"></i> <span class="hide-menu"> CSR <span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
-                            <li> <a href="#">Zulily</a> </li>
+                            <li> <a href="zulilyitemfilter.html"><i class="fa fa-user fa-fw"></i>&nbsp;Zulily</a> </li>
+                            <li> <a href="itemfilter.html"><i class="fa fa-filter fa-fw"></i>&nbsp;Item Filter</a> </li>
                         </ul>
                     </li>
-                    <li><a href="#" class="waves-effect"><i data-icon=")" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu"> Customers <span class="fa arrow"></span></span></a>
+                    <li><a href="#" class="waves-effect"><i class="fa fa-users fa-fw"></i> <span class="hide-menu"> Customers <span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
-                          <li> <a href="#">Portal</a> </li>
-                          <li> <a href="#">Add New Customer</a> </li>
-                          <li> <a href="#">Information</a> </li>
-                          <li> <a href="#">Addresses & Contacts</a> </li>
-                          <li> <a href="#">Notes</a> </li>
-                          <li> <a href="#">History</a> </li>
-                          <li><a href="javascript:void(0)" class="waves-effect">Claims<span class="fa arrow"></span></a>
+                          <li> <a href="customerportal.html"><i class="fa fa-laptop fa-fw"></i>&nbsp;Portal</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-user-plus fa-fw"></i>&nbsp;Add New Customer</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-info-circle fa-fw"></i>&nbsp;Information</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;<span class="hide-menu"> Addresses & Contacts <span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-third-level">
+                                <li> <a href="#"><i class="fa fa-bookmark fa-fw"></i>&nbsp;Addresses</a></li>
+                                <li> <a href="#"><i class="fa fa-group fa-fw"></i>&nbsp;Contacts</a></li>
+                            </ul>
+                          </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-clipboard fa-fw"></i>&nbsp;Notes</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-history fa-fw"></i>&nbsp;History</a> </li>
+                          <li><a href="javascript:void(0)" class="waves-effect"><i class="fa fa-angle-double-right"></i>&nbsp;Claims<span class="fa arrow"></span></a>
                               <ul class="nav nav-third-level">
-                                  <li> <a href="#">View, Add & Finalize Items</a></li>
-                                  <li> <a href="#">Check In Returns</a></li>
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-edit fa-fw"></i>&nbsp;View, Add & Finalize Items</a></li>
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-mail-reply fa-fw"></i>&nbsp;Check In Returns</a></li>
                               </ul>
                           </li>
-                          <li><a href="javascript:void(0)" class="waves-effect">Payments<span class="fa arrow"></span></a>
+                          <li><a href="javascript:void(0)" class="waves-effect"><i class="fa fa-angle-double-right"></i>&nbsp;Payments<span class="fa arrow"></span></a>
                               <ul class="nav nav-third-level">
-                                  <li> <a href="#">Add & View Payments</a></li>
-                                  <li> <a href="#">Auto Add Payments</a></li>
-                                  <li> <a href="#">Add & View Credit Cards</a></li>
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-usd fa-fw"></i>&nbsp;Add & View Payments</a></li>
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-cog fa-fw"></i>&nbsp;Auto Add Payments</a></li>
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-credit-card fa-fw"></i>&nbsp;Add & View Credit Cards</a></li>
                               </ul>
                           </li>
-                          <li><a href="javascript:void(0)" class="waves-effect">Orders & Invoices<span class="fa arrow"></span></a>
+                          <li><a href="javascript:void(0)" class="waves-effect"><i class="fa fa-angle-double-right"></i>&nbsp;Orders & Invoices<span class="fa arrow"></span></a>
                               <ul class="nav nav-third-level">
-                                  <li> <a href="#">All Items for this Customer</a></li>
-                                  <li> <a href="#">All Customers for this Item</a></li>
-                                  <li> <a href="#">Historic Pricing of the Item</a></li>
-                                  <li> <a href="#">Reset Pwd</a></li>
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-cubes fa-fw"></i>&nbsp;All Items for this Customer</a></li>
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-users fa-fw"></i>&nbsp;All Customers for this Item</a></li>
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-line-chart fa-fw"></i>&nbsp;Historic Pricing of the Item</a></li>
                               </ul>
                           </li>
-                          <li> <a href="#">Quotes</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-list"></i>&nbsp;Quotes</a> </li>
                         </ul>
                     </li>
-                    <li> <a href="#" class="waves-effect"><i data-icon="/" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu"> Orders <span class="fa arrow"></span></span></a>
+                    <li> <a href="#" class="waves-effect"><i class="fa fa-truck fa-fw"></i> <span class="hide-menu"> Orders <span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
-                          <li> <a href="#">Add New Order</a> </li>
-                          <li> <a href="#">Add / Edit Items</a> </li>
-                          <li> <a href="#">Add Bulk Items</a> </li>
-                          <li> <a href="#">Billing / Shipping</a> </li>
-                          <li> <a href="#">Credit Card Transaction</a> </li>
-                          <li> <a href="#">Auto Process Order</a> </li>
-                          <li> <a href="#">Rip Order</a> </li>
-                          <li> <a href="#">Queue Order</a> </li>
-                          <li> <a href="#">Divide Order</a> </li>
-                          <li> <a href="#">Order Life Cycle</a> </li>
-                          <li> <a href="#">Order Commitment</a> </li>
-                          <li> <a href="#">Check Duplicates</a> </li>
-                          <li> <a href="#">Problems & Overrides</a> </li>
-                          <li> <a href="#">Copy & Move Orders</a> </li>
-                          <li> <a href="#">Get Order Images</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-plus-circle fa-fw"></i>&nbsp;Add New Order</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-file-text-o fa-fw"></i>&nbsp;Add/Edit Items</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;Add Bulk Items</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-truck fa-fw"></i>&nbsp;Billing/Shipping</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-credit-card fa-fw"></i>&nbsp;Credit Card Transaction</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-bolt fa-fw"></i>&nbsp;Auto Process Order</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-compress fa-fw"></i>&nbsp;Rip Order</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-bars fa-fw"></i>&nbsp;Queue Order</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-columns fa-fw"></i>&nbsp;Divide Order</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-retweet fa-fw"></i>&nbsp;Order Life Cycle</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-check fa-fw"></i>&nbsp;Order Commitment</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-clone fa-fw"></i>&nbsp;Check Duplicates</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-pencil-square-o fa-fw"></i>&nbsp;Problems & Overrides</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-files-o fa-fw"></i>&nbsp;Copy & Move Orders</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-file-image-o fa-fw"></i>&nbsp;Get Order Images</a> </li>
                         </ul>
                     </li>
-                    <li> <a href="#" class="waves-effect"><i data-icon="&#xe00b;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu"> Show Management <span class="fa arrow"></span></span></a>
+                    <li> <a href="javascript:void(0)" class="waves-effect"><i class="fa fa-cubes fa-fw"></i> <span class="hide-menu"> Show Management <span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="#">Showroom Checkin</a></li>
-                            <li><a href="#">Temporary Users</a></li>
-                            <li><a href="#">Show Labels</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Showroom Checkin</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Temporary Users</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Show Labels</a></li>
                         </ul>
                     </li>
-                    <li> <a href="#" class="waves-effect"><i data-icon="&#xe00b;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu"> Marketing <span class="fa arrow"></span></span></a>
+                    <li> <a href="javascript:void(0)" class="waves-effect"><i class="fa fa-briefcase fa-fw"></i> <span class="hide-menu"> Marketing <span class="fa arrow"></span></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="#">Notifications</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Notifications</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -506,14 +324,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <div class="checkin-body">
                                     <div class="col-md-2">
                                         <div class="radio radio-theme">
-                                            <input type="radio" name="radio" id="allitems" value="allitems">
-                                            <label for="allitems"> Add from previous date  </label>
+                                            <input type="radio" name="radio" id="addfrompreviousdate" value="allitems">
+                                            <label for="addfrompreviousdate"> Add from previous date  </label>
                                         </div>
                                     </div>
                                     <div class="col-md-2">
                                          <div class="radio radio-theme">
-                                            <input type="radio" name="radio" id="allitems" value="allitems">
-                                            <label for="allitems"> Add Manually </label>
+                                            <input type="radio" name="radio" id="addmanually" value="allitems">
+                                            <label for="addmanually"> Add Manually </label>
                                         </div>
                                     </div>
                                     <div class="col-md-2">
@@ -533,7 +351,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <button type="button" class="fcbtn btn btn-outline btn-primary btn-1c MarginTop25" id="AddNew">Add New</button>
                                         </div>
                                         <div class="clearfix"></div>
-                                        
+
                                 </div>
                                 <div class="AddNewGoal">
                                 <hr>
@@ -626,9 +444,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                               <tr class="fold">
                                                                 <td colspan="6" class="fold-padding">
                                                                   <div class="fold-content">
-                                                                   
+
                                                                     <table class="table table-striped table table-bordered">
-                                                                      
+
                                                                       <tbody>
                                                                         <tr>
                                                                           <td class="width-250">Unloading Containers</td>
@@ -653,11 +471,86 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                                                   </td>
                                                                               </tr>
                                                                       </tbody>
-                                                                    </table>          
+                                                                    </table>
                                                                   </div>
                                                                 </td>
                                                               </tr>
-                                                              
+                                                              <tr class="view">
+                                                                <td colspan="6">KATHY    20 min</td>
+                                                              </tr>
+                                                              <tr class="fold">
+                                                                <td colspan="6" class="fold-padding">
+                                                                  <div class="fold-content">
+
+                                                                    <table class="table table-striped table table-bordered">
+
+                                                                      <tbody>
+                                                                        <tr>
+                                                                          <td class="width-250">Unloading Containers</td>
+                                                                          <td class="width-250">10 (10 min)</td>
+                                                                          <td class="width-150"></td>
+                                                                          <td class="width-300"></td>
+                                                                          <td></td>
+                                                                          <td style="width:82px">
+                                                                              <a href="#" title="" data-toggle="tooltip" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle"><i class="fa fa-edit"></i> </button></a>
+                                                                              <a href="#" title="" data-toggle="tooltip" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle"><i class="fa fa-trash"></i> </button></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                                <td>Unloading Containers</td>
+                                                                                <td>10 (10 min)</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td style="width:82px">
+                                                                                    <a href="#" title="" data-toggle="tooltip" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle"><i class="fa fa-edit"></i> </button></a>
+                                                                                    <a href="#" title="" data-toggle="tooltip" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle"><i class="fa fa-trash"></i> </button></a>
+                                                                                  </td>
+                                                                              </tr>
+                                                                      </tbody>
+                                                                    </table>
+                                                                  </div>
+                                                                </td>
+                                                              </tr>
+                                                              <tr class="view">
+                                                                <td colspan="6">LISA    5 min</td>
+                                                              </tr>
+                                                              <tr class="fold">
+                                                                <td colspan="6" class="fold-padding">
+                                                                  <div class="fold-content">
+
+                                                                    <table class="table table-striped table table-bordered">
+
+                                                                      <tbody>
+                                                                        <tr>
+                                                                          <td class="width-250">Unloading Containers</td>
+                                                                          <td class="width-250">10 (10 min)</td>
+                                                                          <td class="width-150"></td>
+                                                                          <td class="width-300"></td>
+                                                                          <td></td>
+                                                                          <td style="width:82px">
+                                                                              <a href="#" title="" data-toggle="tooltip" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle"><i class="fa fa-edit"></i> </button></a>
+                                                                              <a href="#" title="" data-toggle="tooltip" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle"><i class="fa fa-trash"></i> </button></a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                                <td>Unloading Containers</td>
+                                                                                <td>10 (10 min)</td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td></td>
+                                                                                <td style="width:82px">
+                                                                                    <a href="#" title="" data-toggle="tooltip" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle"><i class="fa fa-edit"></i> </button></a>
+                                                                                    <a href="#" title="" data-toggle="tooltip" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle"><i class="fa fa-trash"></i> </button></a>
+                                                                                  </td>
+                                                                              </tr>
+                                                                      </tbody>
+                                                                    </table>
+                                                                  </div>
+                                                                </td>
+                                                              </tr>
+
+
                                                             </tbody>
                                                           </table>
                                                 </div>
@@ -706,6 +599,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="js/custom.js"></script>
     <script src="js/remodal.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jQuery.style.switcher.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $(".AddNewGoal").hide();
@@ -720,7 +614,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               autoclose: true,
               todayHighlight: true
           });
-  
+
         });
     </script>
 </body>

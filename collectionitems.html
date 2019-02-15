@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>YIS 6.0 | Collection Items</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-extension.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="css/sidebar-nav.min.css" rel="stylesheet">
+    <!-- Animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/custom-select.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="css/multi-select.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/colors/main.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <div id="wrapper">
+        <!-- Top Navigation -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
+                <!-- Logo -->
+                <div class="top-left-part">
+                    <a class="logo" href="index.html">
+                        <img src="images/logo.png" alt="home" class="img-responsive" />
+                    </a>
+                </div>
+                <!-- /Logo -->
+                <!-- This is for mobile view search and menu icon -->
+                <ul class="nav navbar-top-links navbar-left hidden-xs">
+                    <li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a></li>
+                    <li>
+                        <form role="search" class="app-search hidden-xs">
+                            <input type="text" placeholder="Search Customers here by Customer #, Name, Zip or by Tags..." class="form-control"> <a href=""><i class="fa fa-search"></i></a>
+                        </form>
+                    </li>
+                </ul>
+                <!-- This is the message dropdown -->
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li class="dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-envelope"></i>
+          <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+          </a>
+                        <ul class="dropdown-menu mailbox animated flipInY">
+                            <li>
+                                <div class="drop-title">You have 4 new messages</div>
+                            </li>
+                            <li>
+                                <div class="message-center">
+                                    <a href="#">
+                                        <div class="user-img"> <img src="images/profile-2.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>User 1</h5> <span class="mail-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> <span class="time">9:30 AM</span> </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="user-img"> <img src="images/profile-2.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>User 2</h5> <span class="mail-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> <span class="time">9:10 AM</span> </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="user-img"> <img src="images/profile-2.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>User 3</h5> <span class="mail-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> <span class="time">9:08 AM</span> </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="user-img"> <img src="images/profile-2.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>User 4</h5> <span class="mail-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> <span class="time">9:02 AM</span> </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="text-center" href="javascript:void(0);"> <strong>See all notifications</strong> <i class="fa fa-angle-right"></i> </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-messages -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-note"></i>
+          <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+          </a>
+                        <ul class="dropdown-menu dropdown-tasks animated flipInY">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <p> <strong>Task 1</strong> <span class="pull-right text-muted">40% Complete</span> </p>
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <p> <strong>Task 2</strong> <span class="pull-right text-muted">20% Complete</span> </p>
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="sr-only">20% Complete</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <p> <strong>Task 3</strong> <span class="pull-right text-muted">60% Complete</span> </p>
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <p> <strong>Task 4</strong> <span class="pull-right text-muted">80% Complete</span> </p>
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete (danger)</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center" href="#"> <strong>See All Tasks</strong> <i class="fa fa-angle-right"></i> </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-tasks -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"> <img src="images/profile.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Rakesh</b> </a>
+                        <ul class="dropdown-menu dropdown-user animated flipInY">
+                          <li><a href="javascript:void(0)"><i class="ti-user"></i> My Profile</a></li>
+                          <li><a href="javascript:void(0)"><i class="ti-wallet"></i> My Orders</a></li>
+                          <li><a href="javascript:void(0)"><i class="ti-email"></i> My Claims</a></li>
+                          <li><a href="javascript:void(0)"><i class="ti-settings"></i> Account Setting</a></li>
+                          <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> Logout</a></li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <li class="dropdown"> <a class="waves-effect waves-light dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)"><i class="ti-settings"></i></a>
+                      <ul class="dropdown-menu dropdown-user animated flipInY colorSettings">
+                        <li><a href="javascript:void(0)" theme="main" class="default-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="website" class="website-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="blue" class="blue-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="green" class="green-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="brown" class="brown-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="magenta" class="magenta-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="darkblue" class="darkblue-color-theme"></a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- Left navbar-header end -->
+        <div class="navbar-default sidebar" role="navigation">
+             <div class="sidebar-nav navbar-collapse slimscrollsidebar  HorizontalMenu">
+                 <ul class="nav" id="side-menu">
+                     <li class="user-pro">
+                         <a href="#" class="waves-effect"><img src="images/profile.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> Rakesh<span class="fa arrow"></span></span>
+                         </a>
+                         <hr class="menu-hr"/>
+                         <ul class="nav nav-second-level">
+                             <li><a href="javascript:void(0)"><i class="ti-user"></i> My Profile</a></li>
+                             <li><a href="javascript:void(0)"><i class="ti-wallet"></i> My Orders</a></li>
+                             <li><a href="javascript:void(0)"><i class="ti-email"></i> My Claims</a></li>
+                             <li><a href="javascript:void(0)"><i class="ti-settings"></i> Account Setting</a></li>
+                             <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> Logout</a></li>
+                         </ul>
+                     </li>
+
+                     <li> <a href="index.html" class="waves-effect"><i class="fa fa-dashboard fa-fw"></i> <span class="hide-menu"> Dashboard <span class="fa arrow"></span></span></a></li>
+                     <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-user fa-fw"></i> <span class="hide-menu"> Admin <span class="fa arrow"></span></span></a>
+                         <ul class="nav nav-second-level">
+                             <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw fa-fw"></i>&nbsp;Users</a> </li>
+                             <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Department</a> </li>
+                             <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Roles</a> </li>
+                             <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Resource List</a> </li>
+                             <li> <a href="collectionitems.html"><i class="fa fa-object-group fa-fw"></i>&nbsp;Collection Items</a> </li>
+                             <li> <a href="personalization.html"><i class="fa fa-picture-o fa-fw"></i>&nbsp;Personalization</a> </li>
+                         </ul>
+                     </li>
+                     <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-home fa-fw"></i> <span class="hide-menu"> Warehouse <span class="fa arrow"></span></span></a>
+                         <ul class="nav nav-second-level">
+                             <li> <a href="warehouse-dashboard.html"><i class="fa fa-tachometer fa-fw"></i>&nbsp;Dashboard</a> </li>
+                             <li> <a href="calendar.html"><i class="fa fa-calendar fa-fw"></i>&nbsp;Calendar</a> </li>
+                             <li> <a href="warehouse-checkin.html"><i class="fa fa-check-circle-o fa-fw"></i>&nbsp;Checkin</a> </li>
+                         </ul>
+                     </li>
+                     <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-users fa-fw"></i> <span class="hide-menu"> CSR <span class="fa arrow"></span></span></a>
+                         <ul class="nav nav-second-level">
+                             <li> <a href="zulilyitemfilter.html"><i class="fa fa-user fa-fw"></i>&nbsp;Zulily</a> </li>
+                             <li> <a href="itemfilter.html"><i class="fa fa-filter fa-fw"></i>&nbsp;Item Filter</a> </li>
+                         </ul>
+                     </li>
+                     <li><a href="#" class="waves-effect"><i class="fa fa-users fa-fw"></i> <span class="hide-menu"> Customers <span class="fa arrow"></span></span></a>
+                         <ul class="nav nav-second-level">
+                           <li> <a href="customerportal.html"><i class="fa fa-laptop fa-fw"></i>&nbsp;Portal</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-user-plus fa-fw"></i>&nbsp;Add New Customer</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-info-circle fa-fw"></i>&nbsp;Information</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;<span class="hide-menu"> Addresses & Contacts <span class="fa arrow"></span></span></a>
+                             <ul class="nav nav-third-level">
+                                 <li> <a href="#"><i class="fa fa-bookmark fa-fw"></i>&nbsp;Addresses</a></li>
+                                 <li> <a href="#"><i class="fa fa-group fa-fw"></i>&nbsp;Contacts</a></li>
+                             </ul>
+                           </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-clipboard fa-fw"></i>&nbsp;Notes</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-history fa-fw"></i>&nbsp;History</a> </li>
+                           <li><a href="javascript:void(0)" class="waves-effect"><i class="fa fa-angle-double-right"></i>&nbsp;Claims<span class="fa arrow"></span></a>
+                               <ul class="nav nav-third-level">
+                                   <li> <a href="javascript:void(0)"><i class="fa fa-edit fa-fw"></i>&nbsp;View, Add & Finalize Items</a></li>
+                                   <li> <a href="javascript:void(0)"><i class="fa fa-mail-reply fa-fw"></i>&nbsp;Check In Returns</a></li>
+                               </ul>
+                           </li>
+                           <li><a href="javascript:void(0)" class="waves-effect"><i class="fa fa-angle-double-right"></i>&nbsp;Payments<span class="fa arrow"></span></a>
+                               <ul class="nav nav-third-level">
+                                   <li> <a href="javascript:void(0)"><i class="fa fa-usd fa-fw"></i>&nbsp;Add & View Payments</a></li>
+                                   <li> <a href="javascript:void(0)"><i class="fa fa-cog fa-fw"></i>&nbsp;Auto Add Payments</a></li>
+                                   <li> <a href="javascript:void(0)"><i class="fa fa-credit-card fa-fw"></i>&nbsp;Add & View Credit Cards</a></li>
+                               </ul>
+                           </li>
+                           <li><a href="javascript:void(0)" class="waves-effect"><i class="fa fa-angle-double-right"></i>&nbsp;Orders & Invoices<span class="fa arrow"></span></a>
+                               <ul class="nav nav-third-level">
+                                   <li> <a href="javascript:void(0)"><i class="fa fa-cubes fa-fw"></i>&nbsp;All Items for this Customer</a></li>
+                                   <li> <a href="javascript:void(0)"><i class="fa fa-users fa-fw"></i>&nbsp;All Customers for this Item</a></li>
+                                   <li> <a href="javascript:void(0)"><i class="fa fa-line-chart fa-fw"></i>&nbsp;Historic Pricing of the Item</a></li>
+                               </ul>
+                           </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-list"></i>&nbsp;Quotes</a> </li>
+                         </ul>
+                     </li>
+                     <li> <a href="#" class="waves-effect"><i class="fa fa-truck fa-fw"></i> <span class="hide-menu"> Orders <span class="fa arrow"></span></span></a>
+                         <ul class="nav nav-second-level">
+                           <li> <a href="javascript:void(0)"><i class="fa fa-plus-circle fa-fw"></i>&nbsp;Add New Order</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-file-text-o fa-fw"></i>&nbsp;Add/Edit Items</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;Add Bulk Items</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-truck fa-fw"></i>&nbsp;Billing/Shipping</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-credit-card fa-fw"></i>&nbsp;Credit Card Transaction</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-bolt fa-fw"></i>&nbsp;Auto Process Order</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-compress fa-fw"></i>&nbsp;Rip Order</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-bars fa-fw"></i>&nbsp;Queue Order</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-columns fa-fw"></i>&nbsp;Divide Order</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-retweet fa-fw"></i>&nbsp;Order Life Cycle</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-check fa-fw"></i>&nbsp;Order Commitment</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-clone fa-fw"></i>&nbsp;Check Duplicates</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-pencil-square-o fa-fw"></i>&nbsp;Problems & Overrides</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-files-o fa-fw"></i>&nbsp;Copy & Move Orders</a> </li>
+                           <li> <a href="javascript:void(0)"><i class="fa fa-file-image-o fa-fw"></i>&nbsp;Get Order Images</a> </li>
+                         </ul>
+                     </li>
+                     <li> <a href="javascript:void(0)" class="waves-effect"><i class="fa fa-cubes fa-fw"></i> <span class="hide-menu"> Show Management <span class="fa arrow"></span></span></a>
+                         <ul class="nav nav-second-level">
+                             <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Showroom Checkin</a></li>
+                             <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Temporary Users</a></li>
+                             <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Show Labels</a></li>
+                         </ul>
+                     </li>
+                     <li> <a href="javascript:void(0)" class="waves-effect"><i class="fa fa-briefcase fa-fw"></i> <span class="hide-menu"> Marketing <span class="fa arrow"></span></span></a>
+                         <ul class="nav nav-second-level">
+                             <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Notifications</a></li>
+                         </ul>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Collection Items</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                      <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                              <li class="breadcrumb-item active">Collection Items</li>
+                          </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="white-box clearfix">
+                          <div class="panel panel-inverse">
+                                  <div class="panel-heading">Collection List</div>
+                                  <div class="panel-wrapper">
+                                       <div class="panel-body collectionitemsedit">
+                                          <div class="col-md-12 nopaddingleft nopaddingright">
+                                              <button class="fcbtn btn btn-outline btn-primary btn-1c pull-left" id="AddNewCollectionBtn" type="button">Add New Collection</button>
+                                              <div class="AddNewCollection">
+                                                  <div class="col-md-12 nopaddingleft nopaddingright">
+                                                    <div class="form-group col-md-4">
+                                                        <label class="control-label">Starting Item#:<sup class="required">*</sup></label>
+                                                        <input type="text" class="form-control" />
+                                                        <p class="help-txt">Max 3 Characters</p>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label class="control-label">Collection Name:<sup class="required">*</sup></label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label class="control-label">Discount%:</label>
+                                                        <input type="number" class="form-control" />
+                                                        <p class="help-txt">Default discount that will be applied to each item</p>
+                                                    </div>
+                                                    <div class="col-md-12 text-center center-block">
+                                                        <button type="button" class="fcbtn btn btn-outline btn-primary btn-1c" id="Save">Save</button>
+                                                        <button type="button" class="fcbtn btn btn-outline btn-primary btn-1c" id="Cancel">Cancel</button>
+                                                        <p class="help-txt text-center">Pressing Save will create the collection and allow you to add items</p>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                              <div class="pull-right table-search">
+                                                <form role="search" class="app-search pull-left">
+                                                    <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a>
+                                                </form>
+                                                <button type="button" class="btn btn-custom btn-circle" title="" data-toggle="tooltip" data-original-title="Filter"><i class="ti-filter"></i> </button>
+                                              </div>
+                                          </div>
+                                          <div class="clearfix"></div>
+                                              <div id="table-scroll" class="table-scroll custom-scroll">
+                                                  <div id="faux-table" class="faux-table table-responsive custom-scroll" aria="hidden"></div>
+                                                  <div class="table-wrap table-responsive custom-scroll">
+                                                    <table id="main-table" class="table MarginTop10 table-striped table-bordered table-hover">
+                                                      <thead>
+                                                        <tr>
+                                                          <th scope="col">Item#</th>
+                                                          <th scope="col">Collection&nbsp;Name</th>
+                                                          <th scope="col">Items&nbsp;Count/Sold&nbsp;Out</th>
+                                                          <th scope="col">Unit&nbsp;Count</th>
+                                                          <th scope="col">Free&nbsp;Items&nbsp;Count</th>
+                                                          <th scope="col">List&nbsp;$</th>
+                                                          <th scope="col">Net&nbsp;$</th>
+                                                          <th scope="col">Initial&nbsp;Discount</th>
+                                                          <th scope="col">Net&nbsp;Discount</th>
+                                                          <th scope="col">Created&nbsp;On</th>
+                                                          <th scope="col">Created&nbsp;By</th>
+                                                          <th scope="col">Make&nbsp;Active/Inactive</th>
+                                                          <th scope="col">Actions</th>
+                                                        </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>60057</td>
+                                                          <td>Black and White Christmas - Dallas</td>
+                                                          <td>26/0</td>
+                                                          <td>111</td>
+                                                          <td>0</td>
+                                                          <td>$567.50</td>
+                                                          <td>$539.13</td>
+                                                          <td>5 %</td>
+                                                          <td>5 %</td>
+                                                          <td>01/15/2019</td>
+                                                          <td>Chi</td>
+                                                          <td>
+                                                            <label class="switch">
+                                                              <input type="checkbox" checked>
+                                                              <span class="slider round"></span>
+                                                              <span class="absolute-no">PND</span>
+                                                            </label>
+                                                          </td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>60056</td>
+                                                          <td>Honey Bee Collection</td>
+                                                          <td>17/0</td>
+                                                          <td>61</td>
+                                                          <td>0</td>
+                                                          <td>$486.50</td>
+                                                          <td>$444.18</td>
+                                                          <td>5 %</td>
+                                                          <td>9 %</td>
+                                                          <td>01/12/2019</td>
+                                                          <td>Chi</td>
+                                                          <td>
+                                                            <label class="switch">
+                                                              <input type="checkbox" checked>
+                                                              <span class="slider round"></span>
+                                                              <span class="absolute-no">PND</span>
+                                                            </label>
+                                                          </td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>60055</td>
+                                                          <td>Sign Program Table Top</td>
+                                                          <td>17/0</td>
+                                                          <td>193</td>
+                                                          <td>1</td>
+                                                          <td>$540.00</td>
+                                                          <td>$480.00</td>
+                                                          <td>0 %</td>
+                                                          <td>11 %</td>
+                                                          <td>01/10/2019</td>
+                                                          <td>Phani</td>
+                                                          <td>
+                                                            <label class="switch">
+                                                              <input type="checkbox">
+                                                              <span class="slider round"></span>
+                                                              <span class="absolute-no">PND</span>
+                                                            </label>
+                                                          </td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>60050</td>
+                                                          <td>Water Color Collection</td>
+                                                          <td>13/0</td>
+                                                          <td>85</td>
+                                                          <td>1</td>
+                                                          <td>$375.50</td>
+                                                          <td>$342.00</td>
+                                                          <td>5 %</td>
+                                                          <td>9 %</td>
+                                                          <td>01/12/2019</td>
+                                                          <td>Chi</td>
+                                                          <td>
+                                                            <label class="switch">
+                                                              <input type="checkbox">
+                                                              <span class="slider round"></span>
+                                                              <span class="absolute-no">PND</span>
+                                                            </label>
+                                                          </td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>60051</td>
+                                                          <td>Sign Program</td>
+                                                          <td>26/0</td>
+                                                          <td>111</td>
+                                                          <td>0</td>
+                                                          <td>$567.50</td>
+                                                          <td>$539.13</td>
+                                                          <td>5 %</td>
+                                                          <td>5 %</td>
+                                                          <td>01/15/2019</td>
+                                                          <td>Chi</td>
+                                                          <td>
+                                                            <label class="switch">
+                                                              <input type="checkbox" checked>
+                                                              <span class="slider round"></span>
+                                                              <span class="absolute-no">PND</span>
+                                                            </label>
+                                                          </td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>60053</td>
+                                                          <td>Black and White Christmas - Dallas</td>
+                                                          <td>26/0</td>
+                                                          <td>111</td>
+                                                          <td>0</td>
+                                                          <td>$567.50</td>
+                                                          <td>$539.13</td>
+                                                          <td>5 %</td>
+                                                          <td>5 %</td>
+                                                          <td>01/15/2019</td>
+                                                          <td>Chi</td>
+                                                          <td>
+                                                            <label class="switch">
+                                                              <input type="checkbox">
+                                                              <span class="slider round"></span>
+                                                              <span class="absolute-no">PND</span>
+                                                            </label>
+                                                          </td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>60059</td>
+                                                          <td>Black and White Christmas - Dallas</td>
+                                                          <td>26/0</td>
+                                                          <td>111</td>
+                                                          <td>0</td>
+                                                          <td>$567.50</td>
+                                                          <td>$539.13</td>
+                                                          <td>5 %</td>
+                                                          <td>5 %</td>
+                                                          <td>01/15/2019</td>
+                                                          <td>Chi</td>
+                                                          <td>
+                                                            <label class="switch">
+                                                              <input type="checkbox">
+                                                              <span class="slider round"></span>
+                                                              <span class="absolute-no">PND</span>
+                                                            </label>
+                                                          </td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>60057</td>
+                                                          <td>Black and White Christmas - Dallas</td>
+                                                          <td>26/0</td>
+                                                          <td>111</td>
+                                                          <td>0</td>
+                                                          <td>$567.50</td>
+                                                          <td>$539.13</td>
+                                                          <td>5 %</td>
+                                                          <td>5 %</td>
+                                                          <td>01/15/2019</td>
+                                                          <td>Chi</td>
+                                                          <td>
+                                                            <label class="switch">
+                                                              <input type="checkbox" checked>
+                                                              <span class="slider round"></span>
+                                                              <span class="absolute-no">PND</span>
+                                                            </label>
+                                                          </td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>60057</td>
+                                                          <td>Black and White Christmas - Dallas</td>
+                                                          <td>26/0</td>
+                                                          <td>111</td>
+                                                          <td>0</td>
+                                                          <td>$567.50</td>
+                                                          <td>$539.13</td>
+                                                          <td>5 %</td>
+                                                          <td>5 %</td>
+                                                          <td>01/15/2019</td>
+                                                          <td>Chi</td>
+                                                          <td>
+                                                            <label class="switch">
+                                                              <input type="checkbox" checked>
+                                                              <span class="slider round"></span>
+                                                              <span class="absolute-no">PND</span>
+                                                            </label>
+                                                          </td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>60057</td>
+                                                          <td>Black and White Christmas - Dallas</td>
+                                                          <td>26/0</td>
+                                                          <td>111</td>
+                                                          <td>0</td>
+                                                          <td>$567.50</td>
+                                                          <td>$539.13</td>
+                                                          <td>5 %</td>
+                                                          <td>5 %</td>
+                                                          <td>01/15/2019</td>
+                                                          <td>Chi</td>
+                                                          <td>
+                                                            <label class="switch">
+                                                              <input type="checkbox">
+                                                              <span class="slider round"></span>
+                                                              <span class="absolute-no">PND</span>
+                                                            </label>
+                                                          </td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                      </tbody>
+                                                      <!-- <tfoot>
+                                                        <tr>
+                                                          <th>Footer 1</th>
+                                                          <td>Footer 2</td>
+                                                          <td>Footer 3</td>
+                                                          <td>Footer 4</td>
+                                                          <td>Footer 5</td>
+                                                          <td>Footer 6</td>
+                                                          <td>Footer 7</td>
+                                                          <td>Footer 8</td>
+                                                        </tr>
+                                                      </tfoot> -->
+                                                    </table>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-12 nopaddingleft nopaddingright">
+                                                <div class="form-group col-md-6 MarginTop15 nopaddingleft nopaddingright showrows">
+                                                      <label class="control-label col-md-2 align-middle">Show Rows: </label>
+                                                      <div class="col-md-2">
+                                                        <select class="form-control">
+                                                            <option value="">5</option>
+                                                            <option value="">10</option>
+                                                            <option value="">20</option>
+                                                            <option value="">50</option>
+                                                            <option value="">100</option>
+                                                            <option value="">All</option>
+                                                        </select>
+                                                      </div>
+
+                                                  </div>
+                                                  <div class="col-md-6 MarginTop15 nopaddingleft nopaddingright">
+                                                    <nav data-pagination class="pull-right">
+                                                      <a href=# disabled><i class="fa fa-chevron-left"></i></a>
+                                                      <ul>
+                                                        <li class=current><a href=#1>1</a>
+                                                        <li><a href=#2>2</a>
+                                                        <li><a href=#3>3</a>
+                                                        <li><a href=#4>4</a>
+                                                        <li><a href=#5>5</a>
+                                                      </ul>
+                                                      <a href=#2><i class="fa fa-chevron-right"></i></a>
+                                                    </nav>
+                                                  </div>
+                                                </div>
+                                       </div>
+                                  </div>
+                          </div>
+
+
+                          <div class="panel panel-inverse">
+                                  <div class="panel-heading">Collection Items</div>
+                                  <div class="panel-wrapper">
+                                       <div class="panel-body collectionitemsedit">
+                                          <div class="col-md-12 nopaddingleft nopaddingright">
+                                              <button class="fcbtn btn btn-outline btn-primary btn-1c pull-left" data-toggle="modal" data-target="#AddItembyUPC" type="button">Add Items</button>
+                                              <div class="pull-right table-search">
+                                                <form role="search" class="app-search pull-left">
+                                                    <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a>
+                                                </form>
+                                                <button type="button" class="btn btn-custom btn-circle" title="" data-toggle="tooltip" data-original-title="Filter"><i class="ti-filter"></i> </button>
+                                              </div>
+                                          </div>
+                                          <div class="clearfix"></div>
+                                              <div id="table-scroll1" class="table-scroll custom-scroll">
+                                                  <div id="faux-table1" class="faux-table table-responsive custom-scroll" aria="hidden"></div>
+                                                  <div class="table-wrap table-responsive custom-scroll">
+                                                    <table id="main-table1" class="table MarginTop10 table-striped table-bordered table-hover">
+                                                      <thead>
+                                                        <tr>
+                                                          <th scope="col">
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="checkbox" type="checkbox">
+                                                                <label for="checkbox"></label>
+                                                            </div>
+                                                          </th>
+                                                          <th scope="col">Image</th>
+                                                          <th scope="col">Item#</th>
+                                                          <th scope="col">Description</th>
+                                                          <th scope="col">Quantity</th>
+                                                          <th scope="col">List&nbsp;$</th>
+                                                          <th scope="col">Net&nbsp;$</th>
+                                                          <th scope="col">Ext&nbsp;Net&nbsp;$</th>
+                                                          <th scope="col">Discount&nbsp;%</th>
+                                                          <th scope="col">Min&nbsp;Sell</th>
+                                                          <th scope="col">Min&nbsp;Pack</th>
+                                                          <th scope="col">In&nbsp;Stock</th>
+                                                          <th scope="col">Status</th>
+                                                          <th scope="col">Actions</th>
+                                                        </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>
+                                                            <div class="checkbox checkbox-primary FixedCheckbox">
+                                                                <input id="checkbox1" type="checkbox">
+                                                                <label for="checkbox1"></label>
+                                                            </div>
+                                                          </td>
+                                                          <td>
+                                                              <img src="images/37024.jpg" class=""/>
+                                                          </td>
+                                                          <td>37024</td>
+                                                          <td>Personalizable Wood Plaque</td>
+                                                          <td>3</td>
+                                                          <td>$8.00</td>
+                                                          <td>$7.60</td>
+                                                          <td>$22.80</td>
+                                                          <td>5 %</td>
+                                                          <td>3</td>
+                                                          <td>3</td>
+                                                          <td>6</td>
+                                                          <td><span class="badge badge-success">ACT</span></td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>
+                                                            <div class="checkbox checkbox-primary FixedCheckbox">
+                                                                <input id="checkbox1" type="checkbox">
+                                                                <label for="checkbox1"></label>
+                                                            </div>
+                                                          </td>
+                                                          <td>
+                                                              <img src="images/37040.jpg" class=""/>
+                                                          </td>
+                                                          <td>37040</td>
+                                                          <td>Quotation Wood Plaque</td>
+                                                          <td>6</td>
+                                                          <td>$4.00</td>
+                                                          <td>$3.80</td>
+                                                          <td>$22.80</td>
+                                                          <td>5 %</td>
+                                                          <td>6</td>
+                                                          <td>6</td>
+                                                          <td>0</td>
+                                                          <td><span class="badge badge-success">ACT</span></td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>
+                                                            <div class="checkbox checkbox-primary FixedCheckbox">
+                                                                <input id="checkbox1" type="checkbox">
+                                                                <label for="checkbox1"></label>
+                                                            </div>
+                                                          </td>
+                                                          <td>
+                                                              <img src="images/37057.jpg" class=""/>
+                                                          </td>
+                                                          <td>37057</td>
+                                                          <td>Heart Wood Plaque</td>
+                                                          <td>4</td>
+                                                          <td>$6.00</td>
+                                                          <td>$5.70</td>
+                                                          <td>$22.80</td>
+                                                          <td>5 %</td>
+                                                          <td>4</td>
+                                                          <td>4</td>
+                                                          <td>0</td>
+                                                          <td><span class="badge badge-success">ACT</span></td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>
+                                                            <div class="checkbox checkbox-primary FixedCheckbox">
+                                                                <input id="checkbox1" type="checkbox">
+                                                                <label for="checkbox1"></label>
+                                                            </div>
+                                                          </td>
+                                                          <td>
+                                                              <img src="images/37072.jpg" class=""/>
+                                                          </td>
+                                                          <td>37072</td>
+                                                          <td>Tree Wood Plaque</td>
+                                                          <td>6</td>
+                                                          <td>$3.50</td>
+                                                          <td>$3.33</td>
+                                                          <td>$19.98</td>
+                                                          <td>5 %</td>
+                                                          <td>6</td>
+                                                          <td>6</td>
+                                                          <td>0</td>
+                                                          <td><span class="badge badge-success">ACT</span></td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>
+                                                            <div class="checkbox checkbox-primary FixedCheckbox">
+                                                                <input id="checkbox1" type="checkbox">
+                                                                <label for="checkbox1"></label>
+                                                            </div>
+                                                          </td>
+                                                          <td>
+                                                              <img src="images/37040.jpg" class=""/>
+                                                          </td>
+                                                          <td>37040</td>
+                                                          <td>Personalizable Wood Plaque</td>
+                                                          <td>2</td>
+                                                          <td>$7.50</td>
+                                                          <td>$7.10</td>
+                                                          <td>$16.80</td>
+                                                          <td>5 %</td>
+                                                          <td>2</td>
+                                                          <td>2</td>
+                                                          <td>0</td>
+                                                          <td><span class="badge badge-success">ACT</span></td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>
+                                                            <div class="checkbox checkbox-primary FixedCheckbox">
+                                                                <input id="checkbox1" type="checkbox">
+                                                                <label for="checkbox1"></label>
+                                                            </div>
+                                                          </td>
+                                                          <td>
+                                                              <img src="images/37024.jpg" class=""/>
+                                                          </td>
+                                                          <td>37024</td>
+                                                          <td>Quotation Wood Plaque</td>
+                                                          <td>2</td>
+                                                          <td>$8.00</td>
+                                                          <td>$7.53</td>
+                                                          <td>$19.85</td>
+                                                          <td>5 %</td>
+                                                          <td>2</td>
+                                                          <td>2</td>
+                                                          <td>0</td>
+                                                          <td><span class="badge badge-success">ACT</span></td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>
+                                                            <div class="checkbox checkbox-primary FixedCheckbox">
+                                                                <input id="checkbox1" type="checkbox">
+                                                                <label for="checkbox1"></label>
+                                                            </div>
+                                                          </td>
+                                                          <td>
+                                                              <img src="images/37057.jpg" class=""/>
+                                                          </td>
+                                                          <td>37057</td>
+                                                          <td>Heart Wood Plaque</td>
+                                                          <td>8</td>
+                                                          <td>$5.00</td>
+                                                          <td>$4.32</td>
+                                                          <td>$22.80</td>
+                                                          <td>5 %</td>
+                                                          <td>8</td>
+                                                          <td>8</td>
+                                                          <td>0</td>
+                                                          <td><span class="badge badge-success">ACT</span></td>
+                                                          <td>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><button type="button" class="btn btn-custom btn-circle Edit"><i class="fa fa-edit"></i> </button></a>
+                                                              <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
+                                                          </td>
+                                                        </tr>
+
+                                                    </table>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-12 nopaddingleft nopaddingright">
+                                                <div class="form-group col-md-6 MarginTop15 nopaddingleft nopaddingright showrows">
+                                                      <label class="control-label col-md-2 align-middle">Show Rows: </label>
+                                                      <div class="col-md-2">
+                                                        <select class="form-control">
+                                                            <option value="">5</option>
+                                                            <option value="">10</option>
+                                                            <option value="">20</option>
+                                                            <option value="">50</option>
+                                                            <option value="">100</option>
+                                                            <option value="">All</option>
+                                                        </select>
+                                                      </div>
+
+                                                  </div>
+                                                  <div class="col-md-6 MarginTop15 nopaddingleft nopaddingright">
+                                                    <nav data-pagination class="pull-right">
+                                                      <a href=# disabled><i class="fa fa-chevron-left"></i></a>
+                                                      <ul>
+                                                        <li class=current><a href=#1>1</a>
+                                                        <li><a href=#2>2</a>
+                                                        <li><a href=#3>3</a>
+                                                        <li><a href=#4>4</a>
+                                                        <li><a href=#5>5</a>
+                                                      </ul>
+                                                      <a href=#2><i class="fa fa-chevron-right"></i></a>
+                                                    </nav>
+                                                  </div>
+                                                </div>
+                                       </div>
+                                  </div>
+                          </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="AddItembyUPC" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="vcenter" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title text-center" id="vcenter">Add Items for Collection</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Enter UPC / Item#:<sup class="required">*</sup></label>
+                                                    <input type="text" class="form-control" /><i class="fa fa-times"></i>
+                                                </div>
+                                              </div>
+
+                                            </div>
+                                            <div class="modal-footer text-center center-block">
+                                                <button class="fcbtn btn btn-outline btn-primary btn-1c" data-dismiss="modal" type="button">Close</button>
+                                            </div>
+                                        </div>
+                                        <!-- /.modal-content -->
+                                    </div>
+                                    <!-- /.modal-dialog -->
+                                </div>
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> 2018 &copy; All rights reserved. YIS 6.0 </footer>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-extension.min.js"></script>
+    <script src="js/sidebar-nav.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script src="js/waves.js"></script>
+    <script src="js/custom-select.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-select.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.multi-select.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/remodal.js"></script>
+    <script src="js/jQuery.style.switcher.js"></script>
+    <script>
+(function() {
+var fauxTable = document.getElementById("faux-table");
+var mainTable = document.getElementById("main-table");
+var clonedElement = mainTable.cloneNode(true);
+var clonedElement2 = mainTable.cloneNode(true);
+clonedElement.id = "";
+clonedElement2.id = "";
+fauxTable.appendChild(clonedElement);
+fauxTable.appendChild(clonedElement2);
+})();
+
+
+    </script>
+    <script>
+(function() {
+var fauxTable = document.getElementById("faux-table1");
+var mainTable = document.getElementById("main-table1");
+var clonedElement = mainTable.cloneNode(true);
+var clonedElement2 = mainTable.cloneNode(true);
+clonedElement.id = "";
+clonedElement2.id = "";
+fauxTable.appendChild(clonedElement);
+fauxTable.appendChild(clonedElement2);
+})();
+
+
+    </script>
+    <script>
+        $(document).ready(function(){
+          $('.AddNewCollection').hide();
+            $('#AddNewCollectionBtn').click(function(){
+                $('.AddNewCollection').show();
+                $('#AddNewCollectionBtn').hide();
+            });
+            $('#Cancel').click(function(){
+                $('.AddNewCollection').hide();
+                $('#AddNewCollectionBtn').show();
+            });
+        });
+    </script>
+</body>
+
+</html>

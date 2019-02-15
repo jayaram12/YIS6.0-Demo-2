@@ -18,7 +18,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-extension.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Menu CSS -->
     <link href="css/sidebar-nav.min.css" rel="stylesheet">
     <!-- Animation CSS -->
@@ -26,11 +25,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link href="css/custom-select.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap-select.min.css" rel="stylesheet" />
     <link href="css/multi-select.css" rel="stylesheet" type="text/css" />
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/colors/main.css" id="theme" rel="stylesheet">
-    <link href="css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -187,15 +185,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- /.navbar-top-links -->
             <!-- /.navbar-static-side -->
         </nav>
-        <!-- Left navbar-header end -->
-        <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav navbar-collapse slimscrollsidebar HorizontalMenu">
+        <!-- End Top Navigation -->
+        <!-- Left navbar-header -->
+       <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse slimscrollsidebar  HorizontalMenu">
                 <ul class="nav" id="side-menu">
                     <li class="user-pro">
-                        <a href="#" class="waves-effect"><img src="images/profile.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> Rakesh<span class="fa arrow"></span></span>
+                        <a href="#" class="waves-effect"><img src="images/profile.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> <b>Rakesh</b><span class="fa arrow"></span></span>
                         </a>
                         <hr class="menu-hr"/>
-                        <ul class="nav nav-second-level profile-menu">
+                        <ul class="nav nav-second-level">
                             <li><a href="javascript:void(0)"><i class="ti-user"></i> My Profile</a></li>
                             <li><a href="javascript:void(0)"><i class="ti-wallet"></i> My Orders</a></li>
                             <li><a href="javascript:void(0)"><i class="ti-email"></i> My Claims</a></li>
@@ -298,185 +297,168 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </ul>
             </div>
         </div>
+        <!-- Left navbar-header end -->
         <!-- Page Content -->
         <div id="page-wrapper">
             <div class="container-fluid">
-                <div class="row bg-title">
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Zulily</h4>
-                    </div>
-                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                      <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="javascript:void(0)">CSR</a></li>
-                              <li class="breadcrumb-item active">Zulily</li>
-                          </ol>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 nopaddingleft nopaddingright">
-                        <div class="white-box clearfix">
-							<section>
-                                    <div class="row">
-                                            <div class="col-md-6">
-                                            <div class="panel panel-inverse MarginTop20">
-                                              <div class="panel-heading">By Category</div>
-                                                  <div class="panel-wrapper">
-                                                      <div class="panel-body collectionitemsedit">
-                                                           <div class="form-group">
-                                                               <input type="text" class="form-control" placeholder="Search by item#, description or full description">
-                                                           </div>
-                                                      </div>
-                                                   </div>
-                                               </div>
-                                             </div>
-                                             <div class="col-md-6">
-                                             <div class="panel panel-inverse MarginTop20">
-                                               <div class="panel-heading">Availability</div>
-                                                   <div class="panel-wrapper">
-                                                       <div class="panel-body collectionitemsedit">
-                                                            <div class="table-responsive">
-                                                                 <table class="table AvailabilityOptionsTable">
-                                                                     <tbody>
-                                                                         <tr>
-                                                                             <td style="width:160px;">Available Quantity:</td>
-                                                                             <td>In Stock</td>
-                                                                             <td>&gt;</td>
-                                                                             <td><span><input type="text" class="customwidth"></span><span>Pieces</span></td>
-                                                                             <td>Default Quantity:</td>
-                                                                             <td><span><input type="text" class="customwidth" value="24"></span></td>
-                                                                         </tr>
-                                                                     </tbody>
-                                                                 </table>
-                                                            </div>
-                                                       </div>
-                                                    </div>
+              <div class="row bg-title">
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                      <h4 class="page-title">Add New Customer</h4>
+                  </div>
+                  <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                    <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                            <li class="breadcrumb-item active">Add New Customer</li>
+                        </ol>
+                  </div>
+                  <!-- /.col-lg-12 -->
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="white-box clearfix">
+                        <div class="col-md-6">
+                            <div class="panel panel-inverse">
+                                <div class="panel-heading">Customer Information</div>
+                                <div class="panel-wrapper">
+                                    <div class="panel-body">
+                                        <form class="form col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label">Customer#</label>
+                                                      <input type="text" class="form-control"/>
+                                                  </div>
                                                 </div>
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label redcolor">Phone<sup>*</sup></label>
+                                                      <input type="text" class="form-control"/>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label">Web Password</label>
+                                                      <input type="text" class="form-control"/>
+                                                  </div>
+                                                </div>
+
                                               </div>
-                                          </div>
-
-                                          <div class="row">
-                                                <div class="col-md-12">
-                                                  <div class="panel panel-inverse MarginTop20">
-                                                    <div class="panel-heading">By Category</div>
-                                                        <div class="panel-wrapper">
-                                                            <div class="panel-body collectionitemsedit">
-                                                                    <div class="row">
-                                                                            <div class="offset-md-9 offset-md-9  offset-lg-9 col-md-3 col-lg-3 col-sm-3 col-xs-12 MarginBottom10">
-                                                                                  <div class="checkbox checkbox-primary">
-                                                                                          <input id="checkbox" type="checkbox">
-                                                                                          <label for="checkbox">Add To Existing Order</label>
-                                                                                      </div>
-                                                                            </div>
-                                                                        </div>
-                                                              <div class="clearfix"></div>
-                                                              <div class="col-md-3">
-                                                            <div class="form-group col-md-12">
-                                                              <label class="control-label">Life Style: </label>
-                                                              <select id="Newitem" class="form-control">
-                                                                <option value="">African American</option>
-                                                                <option value="">Christmas</option>
-                                                                <option value="">Closeouts</option>
-                                                                <option value="">Coca Cola</option>
-                                                              </select>
-                                                            </div>
-
-                                                          </div>
-                                                          <div class="col-md-3">
-                                                                <div class="form-group col-md-12">
-                                                                  <label class="control-label">Group: </label>
-                                                                  <select id="Newitem" class="form-control">
-                                                                    <option value="">African American</option>
-                                                                    <option value="">Christmas</option>
-                                                                    <option value="">Closeouts</option>
-                                                                    <option value="">Coca Cola</option>
-                                                                  </select>
-                                                                </div>
-
-                                                              </div>
-                                                              <div class="col-md-3">
-                                                                    <div class="form-group col-md-12">
-                                                                      <label class="control-label">Seasonal: </label>
-                                                                      <select id="Newitem" class="form-control">
-                                                                        <option value="">African American</option>
-                                                                        <option value="">Christmas</option>
-                                                                        <option value="">Closeouts</option>
-                                                                        <option value="">Coca Cola</option>
-                                                                      </select>
-                                                                    </div>
-
-                                                                  </div>
-                                                                  <div class="col-md-3">
-                                                                        <label class="control-label">Existing Orders: </label>
-                                                                        <select id="Newitem" class="form-control">
-                                                                          <option value="">733634-1</option>
-                                                                          <option value="">733632-1</option>
-                                                                          <option value="">733613-1</option>
-                                                                          <option value="">724563-1</option>
-                                                                        </select>
-                                                                      </div>
-                                                                  <div class="col-md-12">
-                                                                    <div class="text-center center-block MarginTop25">
-                                                                              <button type="button" class="fcbtn btn btn-primary">Filter</button>
-                                                                              <button type="button" class="fcbtn btn btn-primary">Reset</button>
-                                                                          </div>
-
-                                                                      </div>
-                                                                      <div class="clearfix"></div>
-                                                                      <hr>
-                                                                      <div class="pull-right" id="Dashboard">
-                                                                            <form role="search" class="app-search pull-left">
-                                                                                <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a>
-                                                                            </form>
-                                                                            <button type="button" class="btn btn-custom btn-circle" title="" data-toggle="tooltip" data-original-title="Filter"><i class="ti-filter"></i> </button>
-                                                                          </div>
-                                                                          <div class="table-responsive">
-                                                                                <table class="table table-striped table MarginTop10 table-bordered">
-                                                                                    <thead>
-                                                                                        <tr>
-                                                                                            <th>Select</th>
-                                                                                            <th>Image</th>
-                                                                                            <th>Item#</th>
-                                                                                            <th>Piece&nbsp;Count</th>
-                                                                                            <th width="150">Description</th>
-                                                                                            <th>Qty</th>
-                                                                                            <th>Assortment</th>
-                                                                                            <th>List Price</th>
-                                                                                            <th>Price</th>
-                                                                                            <th>Ext. Price</th>
-                                                                                            <th>Notes</th>
-                                                                                            <th>Min PK</th>
-                                                                                            <th>Min Sell</th>
-                                                                                            <th>Case PK</th>
-                                                                                            <th>Status</th>
-                                                                                            <th>OH Avail</th>
-                                                                                            <th>OW Avail</th>
-                                                                                            <th>PO Avail</th>
-                                                                                            <th>Catalog Pg#</th>
-                                                                                            <th>Life Style</th>
-                                                                                            <th>Group</th>
-                                                                                            <th>Seasonality</th>
-                                                                                        </tr>
-                                                                                    </thead>
-                                                                                    <tbody>
-
-
-                                                                                    </tbody>
-                                                                                </table>
-                                                                            </div>
-                                                                            <div class="col-md-12 text-center center-block">
-                                                                                    <button type="button" class="fcbtn btn btn-outline btn-primary btn-1c">Add to Order</button>
-                                                                                    <button type="button" class="fcbtn btn btn-outline btn-primary btn-1c">Export to Excel</button>
-                                                                                </div>
-
-                                                            </div>
+                                              <div class="row">
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label redcolor">Customer Name<sup>*</sup></label>
+                                                      <input type="text" class="form-control"/>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label">Ext</label>
+                                                      <input type="text" class="form-control"/>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label">Web Deal Code</label>
+                                                      <div class="input-group">
+                                                        <select class="form-control">
+                                                            <option selected>Select Web Deal Code</option>
+                                                            <option>HOMEPAGE</option>
+                                                            <option>Season19</option>
+                                                        </select>
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-clipboard" data-toggle="tooltip" data-original-title="Click here to generate link and copy to clipboard"></i>
                                                         </div>
-                                                    </div>
+                                                      </div>
+
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label">Contact First Name</label>
+                                                      <input type="text" class="form-control"/>
+                                                  </div>
+                                                </div>
+
+                                              </div>
+                                              <div class="row">
+
+
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label">Contact Last Name</label>
+                                                      <input type="text" class="form-control"/>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label">Email</label>
+                                                      <input type="email" class="form-control"/>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label">Mobile</label>
+                                                      <input type="text" class="form-control"/>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label">Fax</label>
+                                                      <input type="text" class="form-control"/>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label">Key Account of CSR</label>
+                                                      <select class="form-control">
+                                                          <option selected>Select CSR</option>
+                                                          <option>DawnP</option>
+                                                          <option>JeanD</option>
+                                                          <option>Trena</option>
+                                                          <option>Theresa</option>
+                                                          <option>Melissa</option>
+                                                          <option>Holly</option>
+                                                          <option>MattD</option>
+                                                      </select>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label">Vendor#</label>
+                                                      <input type="text" class="form-control"/>
+                                                  </div>
                                                 </div>
                                               </div>
-							</section>
-                        </div>
-                    </div>
-                </div>
+                                              <div class="row">
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label redcolor">Address 1<sup>*</sup></label>
+                                                      <input type="text" class="form-control"/>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                  <div class="form-group">
+                                                      <label class="control-label">Class</label>
+                                                      <select class="form-control">
+                                                          <option selected>Select Class Type</option>
+                                                          <option>Classic</option>
+                                                          <option>Gold</option>
+                                                          <option>Platinum</option>
+                                                          <option>Silver</option>
+                                                      </select>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
             </div>
             <!-- /.container-fluid -->
             <footer class="footer text-center"> 2018 &copy; All rights reserved. YIS 6.0 </footer>
@@ -497,53 +479,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="js/custom.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/remodal.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/jQuery.style.switcher.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-
-          $('.datepicker-autoclose').datepicker({
-              autoclose: true,
-              todayHighlight: true
-          });
-
-
-$(".dropdown dt a").on('click', function() {
-  $(".dropdown dd ul").slideToggle('fast');
-});
-
-$(".dropdown dd ul li a").on('click', function() {
-  $(".dropdown dd ul").hide();
-});
-
-function getSelectedValue(id) {
-  return $("#" + id).find("dt a span.value").html();
-}
-
-$(document).bind('click', function(e) {
-  var $clicked = $(e.target);
-  if (!$clicked.parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
-});
-
-$('.mutliSelect input[type="checkbox"]').on('click', function() {
-
-  var title = $(this).closest('.mutliSelect').find('input[type="checkbox"]').val(),
-    title = $(this).val() + ",";
-
-  if ($(this).is(':checked')) {
-    var html = '<span title="' + title + '">' + title + '</span>';
-    $('.multiSel').append(html);
-    $(".hida").hide();
-  } else {
-    $('span[title="' + title + '"]').remove();
-    var ret = $(".hida");
-    $('.dropdown dt a').append(ret);
-
-  }
-});
-
-        });
-    </script>
 </body>
 
 </html>

@@ -94,3 +94,38 @@ $(".tab-slider--nav li").click(function() {
   $(".tab-slider--nav li").removeClass("active");
   $(this).addClass("active");
 });
+
+
+/* ===== Collapsible Panels JS ===== */
+
+    (function ($, window, document) {
+        var panelSelector = '[data-perform="panel-collapse"]',
+            panelRemover = '[data-perform="panel-dismiss"]';
+        $(panelSelector).each(function () {
+            var collapseOpts = {
+                    toggle: false
+                },
+                parent = $(this).closest('.panel'),
+                wrapper = parent.find('.panel-wrapper'),
+                child = $(this).children('i');
+            if (!wrapper.length) {
+                wrapper = parent.children('.panel-heading').nextAll().wrapAll('<div/>').parent().addClass('panel-wrapper');
+                collapseOpts = {};
+            }
+            wrapper.collapse(collapseOpts).on('hide.bs.collapse', function () {
+                child.removeClass('fa-minus').addClass('fa-plus');
+            }).on('show.bs.collapse', function () {
+                child.removeClass('fa-plus').addClass('fa-minus');
+            });
+        });
+
+        /* ===== Collapse Panels ===== */
+
+        $(document).on('click', panelSelector, function (e) {
+            e.preventDefault();
+            var parent = $(this).closest('.panel'),
+                wrapper = parent.find('.panel-wrapper');
+            wrapper.collapse('toggle');
+        });
+
+    }(jQuery, window, document));
